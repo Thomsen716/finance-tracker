@@ -30,6 +30,7 @@ const benefits = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#F1F2EE] px-5 text-[#17211B] sm:px-8">
+      {/* Topbar */}
       <header className="mx-auto flex w-full max-w-7xl justify-end py-5 sm:py-7">
         <nav className="flex items-center gap-3 text-sm font-semibold sm:gap-6 sm:text-base">
           <Link
@@ -54,6 +55,7 @@ export default function Home() {
       </header>
 
       <main className="mx-auto grid w-full max-w-7xl flex-1 grid-cols-1 items-center gap-10 py-10 sm:py-14 md:grid-cols-2 md:gap-12 lg:gap-20 lg:py-20">
+        {/* Venstreside */}
         <section className="mx-auto w-full max-w-xl">
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-green-900 sm:text-sm">
             Til private investorer
@@ -80,7 +82,7 @@ export default function Home() {
             </Link>
           </div>
         </section>
-
+        {/* Højreside */}
         <section
           aria-label="Eksempel på portefølje"
           className="mx-auto w-full max-w-lg md:max-w-none"
@@ -93,6 +95,7 @@ export default function Home() {
           />
         </section>
 
+        {/* Fordele */}
         <section className="col-span-full grid w-full grid-cols-1 gap-8 sm:grid-cols-3">
           {benefits.map((benefit, index) => (
             <article key={benefit.title}>
@@ -110,6 +113,7 @@ export default function Home() {
         </section>
       </main>
 
+      {/* Bundbander */}
       <section className="-mx-5 bg-stone-900 px-5 py-6 text-white sm:-mx-8 sm:px-8">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-5 sm:flex-row sm:items-center">
           <h2 className="text-xl font-bold sm:text-2xl">
